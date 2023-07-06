@@ -8,11 +8,11 @@ namespace ConsoleUI
 {
     internal class Car : Vehicle
     {
-        public bool hasTrunk { get; set; }
+        public bool HasTrunk { get; set; }
 
-        public override void driveAbstract()
+        public override void DriveAbstract()
         {
-            Console.WriteLine($"Kchuck Kchuck, this is a {make} {model} {year}. AND ... it {((hasTrunk) ? "has" : "does not have")} a trunk");
+            Console.WriteLine($"Kchuck Kchuck, this is a {Make} {Model} {Year}. AND ... it {((HasTrunk) ? "has" : "does not have")} a trunk");
         }
 
     }

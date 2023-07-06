@@ -8,13 +8,13 @@ namespace ConsoleUI
 {
     abstract class Vehicle
     {
-        public int year { get; set; }
-        public string model { get; set; }
-        public string make { get; set; }
+        public int Year { get; set; }
+        public string Model { get; set; }
+        public string Make { get; set; }
 
-        public abstract void driveAbstract();
+        public abstract void DriveAbstract();
 
-        public virtual void driveVirtual()
+        public virtual void DriveVirtual()
         {
             Console.WriteLine("virtual drive? what is that? This is the default driveVirtual in Vehicle class");
         }

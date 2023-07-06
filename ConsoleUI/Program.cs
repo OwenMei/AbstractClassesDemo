@@ -48,10 +48,10 @@ namespace ConsoleUI
 
             List<Vehicle> vehicles = new List<Vehicle>();
 
-            Car toyota = new Car() { model = "camry", make = "Toyota", year = 2023, hasTrunk = true};
-            Vehicle honda = new Car() { model = "Odyssey", make = "Honda", year = 2023, hasTrunk = true };
-            Motorcycle kawasaki = new Motorcycle() { model = "Ninja 250", make = "Kawasaki", year = 1986, hasSideCart = false };
-            Vehicle ducati = new Motorcycle() { model = "Fort MFG", make = "Ducati", year = 2019, hasSideCart = true };
+            Car toyota = new Car() { Model = "camry", Make = "Toyota", Year = 2023, HasTrunk = true};
+            Vehicle honda = new Car() { Model = "Odyssey", Make = "Honda", Year = 2023, HasTrunk = true };
+            Motorcycle kawasaki = new Motorcycle() { Model = "Ninja 250", Make = "Kawasaki", Year = 1986, HasSideCart = false };
+            Vehicle ducati = new Motorcycle() { Model = "Fort MFG", Make = "Ducati", Year = 2019, HasSideCart = true };
 
             vehicles.Add(toyota);
             vehicles.Add(honda);
@@ -60,8 +60,8 @@ namespace ConsoleUI
 
             foreach(Vehicle automobile in vehicles)
             {
-                automobile.driveAbstract();
-                automobile.driveVirtual();
+                automobile.DriveAbstract();
+                automobile.DriveVirtual();
             }
 
             #endregion            

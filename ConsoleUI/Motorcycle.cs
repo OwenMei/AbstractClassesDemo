@@ -8,14 +8,14 @@ namespace ConsoleUI
 {
     internal class Motorcycle : Vehicle
     {
-        public bool hasSideCart { get; set; }
+        public bool HasSideCart { get; set; }
 
-        public override void driveAbstract()
+        public override void DriveAbstract()
         {
-            Console.WriteLine($"Vroom Vroom, this is a {make} {model} {year}. AND ... it {((hasSideCart)? "has" : "does not have")} a side cart");
+            Console.WriteLine($"Vroom Vroom, this is a {Make} {Model} {Year}. AND ... it {((HasSideCart)? "has" : "does not have")} a side cart");
         }
 
-        public override void driveVirtual()
+        public override void DriveVirtual()
         {
             Console.WriteLine("Something about a virtual drive, this is motorcycles btw");
         }
